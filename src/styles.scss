@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h2{
+  //min-height: 90px;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+h4{
+  font-size: 24px;
+  line-height: 120%;
+}
+
+span{
+  font-size: 16px;
+  line-height: 140%;
+}
