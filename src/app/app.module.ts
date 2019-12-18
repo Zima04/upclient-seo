@@ -11,6 +11,7 @@ import { KeysCardComponent } from './components/keyses-screen/keys-card/keys-car
 import { KeysesFormComponent } from './components/keyses-screen/keyses-form/keyses-form.component';
 import { MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { WhyScreenComponent } from './components/why-screen/why-screen.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     WelcomeScreenComponent,
     KeysesScreenComponent,
     KeysCardComponent,
-    KeysesFormComponent
+    KeysesFormComponent,
+    WhyScreenComponent
   ],
   imports: [
     BrowserModule,
