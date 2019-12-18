@@ -1,10 +1,17 @@
 <div class="col-12 w-100 mr-auto" style="height: 300px;">
   <div class="content w-100 h-100 " style="background: #3625D3;border-radius: 3px;padding: 50px 30px 30px 30px">
-    <h4 style="padding-bottom: 10px">
-      Архитектурное бюро <br>
-      «Zrobym Architects»
+    <h4 class="m-0" style="padding-bottom: 10px">
+      {{data.header}}
     </h4>
-    <span style="padding-bottom: 70px">5 месяцев продвижения, регион Минск</span>
-
+    <span>{{data.subHeader}}</span>
+    <div *ngIf="true" class="d-flex flex-row align-items-center" style="padding-top: 80px">
+      <div *ngFor="let cell of data.cells" [ngClass]="{'col-4': data.objectType == 1,'col-6': data.objectType == 2}"
+           class="col-4 p-0">
+        <h4 class="align-items-start m-0"> {{cell.fieldValue}}</h4>
+        <span class="align-items-center" style="font-size: 14px">
+          {{cell.subscription}}
+        </span>
+      </div>
+    </div>
   </div>
 </div>

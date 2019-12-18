@@ -8,6 +8,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { WelcomeScreenComponent } from './components/welcome-screen/welcome-screen.component';
 import { KeysesScreenComponent } from './components/keyses-screen/keyses-screen.component';
 import { KeysCardComponent } from './components/keyses-screen/keys-card/keys-card.component';
+import { KeysesFormComponent } from './components/keyses-screen/keyses-form/keyses-form.component';
+import { MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,17 @@ import { KeysCardComponent } from './components/keyses-screen/keys-card/keys-car
     NavBarComponent,
     WelcomeScreenComponent,
     KeysesScreenComponent,
-    KeysCardComponent
+    KeysCardComponent,
+    KeysesFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

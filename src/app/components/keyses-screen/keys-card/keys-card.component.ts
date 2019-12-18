@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { KeysCardInterface } from '../../../interface/keys-card.interface';
 
 @Component({
   selector: 'client-keys-card',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KeysCardComponent implements OnInit {
 
+  @Input() public data: KeysCardInterface;
   constructor() { }
 
   ngOnInit() {
   }
+
+
 
 }
