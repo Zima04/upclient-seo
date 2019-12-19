@@ -1,7 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('assets/ProximaNova/ProximaNova-Regular.eot');
+  src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+  url('assets/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('assets/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+  url('assets/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  //font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Proxima Nova Rg', sans-serif;
+}
 
 h2{
   //min-height: 90px;
@@ -14,7 +28,17 @@ h4{
   line-height: 120%;
 }
 
+h5{
+  font-size: 14px;
+  line-height: 140%;
+}
+
 span{
   font-size: 16px;
+  line-height: 140%;
+}
+
+p{
+  font-size: 14px;
   line-height: 140%;
 }

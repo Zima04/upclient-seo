@@ -12,6 +12,10 @@ import { KeysesFormComponent } from './components/keyses-screen/keyses-form/keys
 import { MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { WhyScreenComponent } from './components/why-screen/why-screen.component';
+import { PackagesScreenComponent } from './components/packages-screen/packages-screen.component';
+import { PackageCardComponent } from './components/packages-screen/package-card/package-card.component';
+import { ReplaceLineBreaks } from './pipes/replace-line-break.pipe';
+import { GarantiesScreenComponent } from './components/garanties-screen/garanties-screen.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { WhyScreenComponent } from './components/why-screen/why-screen.component
     KeysesScreenComponent,
     KeysCardComponent,
     KeysesFormComponent,
-    WhyScreenComponent
+    WhyScreenComponent,
+    PackagesScreenComponent,
+    PackageCardComponent,
+    ReplaceLineBreaks,
+    GarantiesScreenComponent
   ],
   imports: [
     BrowserModule,
