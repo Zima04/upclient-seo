@@ -16,6 +16,9 @@ import { PackagesScreenComponent } from './components/packages-screen/packages-s
 import { PackageCardComponent } from './components/packages-screen/package-card/package-card.component';
 import { ReplaceLineBreaks } from './pipes/replace-line-break.pipe';
 import { GarantiesScreenComponent } from './components/garanties-screen/garanties-screen.component';
+import { QustionsScreenComponent } from './components/qustions-screen/qustions-screen.component';
+import { ClientsScreenComponent } from './components/clients-screen/clients-screen.component';
+import { FooterScreenComponent } from './components/footer-screen/footer-screen.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { GarantiesScreenComponent } from './components/garanties-screen/garantie
     PackagesScreenComponent,
     PackageCardComponent,
     ReplaceLineBreaks,
-    GarantiesScreenComponent
+    GarantiesScreenComponent,
+    QustionsScreenComponent,
+    ClientsScreenComponent,
+    FooterScreenComponent
   ],
   imports: [
     BrowserModule,

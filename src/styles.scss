@@ -11,10 +11,10 @@
 }
 
 html, body { height: 100%; }
-body {
+body, button {
   margin: 0;
   //font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: 'Proxima Nova Rg', sans-serif !important;
 }
 
 h2{
