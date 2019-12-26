@@ -9,7 +9,9 @@ import { WelcomeScreenComponent } from './components/welcome-screen/welcome-scre
 import { KeysesScreenComponent } from './components/keyses-screen/keyses-screen.component';
 import { KeysCardComponent } from './components/keyses-screen/keys-card/keys-card.component';
 import { KeysesFormComponent } from './components/keyses-screen/keyses-form/keyses-form.component';
-import { MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { WhyScreenComponent } from './components/why-screen/why-screen.component';
 import { PackagesScreenComponent } from './components/packages-screen/packages-screen.component';
@@ -19,6 +21,8 @@ import { GarantiesScreenComponent } from './components/garanties-screen/garantie
 import { QustionsScreenComponent } from './components/qustions-screen/qustions-screen.component';
 import { ClientsScreenComponent } from './components/clients-screen/clients-screen.component';
 import { FooterScreenComponent } from './components/footer-screen/footer-screen.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,7 @@ import { FooterScreenComponent } from './components/footer-screen/footer-screen.
     GarantiesScreenComponent,
     QustionsScreenComponent,
     ClientsScreenComponent,
-    FooterScreenComponent
+    FooterScreenComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,9 +48,12 @@ import { FooterScreenComponent } from './components/footer-screen/footer-screen.
     BrowserAnimationsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    NgxPageScrollCoreModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

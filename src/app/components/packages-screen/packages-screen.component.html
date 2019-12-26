@@ -1,24 +1,27 @@
-<div class="container-fluid packages-screen">
+<div class="container-fluid packages-screen" id="packages-screen">
   <div class="d-flex flex-column align-items-center">
-    <div class="d-flex flex-column align-items-center col-6"  style="padding-top: 70px;padding-bottom: 70px">
+    <div class="d-flex flex-column align-items-center col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12 " style="padding-top: 70px;padding-bottom: 70px">
       <h2 class="text-center" style="color:#ffffff">
         Пакеты услуг
       </h2>
       <span class="text-center" style="color:#ffffff">Хотите узнать стоимость? Просто выберите подходящий пакет для Вашего бизнеса </span>
     </div>
   </div>
-  <div class="d-flex flex-row" style="padding-bottom: 70px">
-    <div class="d-flex flex-row w-100">
-      <div class="col-4">
-        <client-package-card [data]="packages[0]"></client-package-card>
-      </div>
-      <div class="col-4" style="position: relative;bottom: 20px;">
-        <client-package-card [data]="packages[1]"></client-package-card>
-      </div>
-      <div class="col-4">
-        <client-package-card [data]="packages[2]"></client-package-card>
-      </div>
+  <!--  <div class="d-flex flex-wrap" >-->
+  <div
+    style="padding-bottom: 70px"
+    class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column align-items-md-center align-items-sm-center align-items-center">
+    <div class="col-xl-4 col-lg-4 col-sm-8 col-sm-8 col-xs-12">
+      <client-package-card [data]="packages[0]"></client-package-card>
     </div>
+    <div class="col-xl-4 col-lg-4 col-sm-8 col-sm-8 col-xs-12"
+         style="position: relative;bottom: 20px;">
+      <client-package-card [data]="packages[1]"></client-package-card>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-sm-8 col-sm-8 col-xs-12">
+      <client-package-card [data]="packages[2]"></client-package-card>
+    </div>
+    <!--    </div>-->
   </div>
 </div>
 

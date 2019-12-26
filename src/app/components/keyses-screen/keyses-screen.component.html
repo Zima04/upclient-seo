@@ -1,20 +1,20 @@
-<div class="container-fluid" style="padding-bottom: 70px;background: rgba(196, 196, 196,0.15)">
+<div id="keyses-screen" class="container-fluid" style="background: rgba(196, 196, 196,0.15)">
   <div class="d-flex flex-column align-items-center">
-    <div class="d-flex flex-column align-items-center col-6"  style="padding-top: 70px;padding-bottom: 50px">
-      <h2 class="text-center">
+    <div class="d-flex flex-column align-items-center col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12 "  style="padding-top: 70px;padding-bottom: 50px">
+      <h2 class="text-center font-weight-bold">
         Наши кейсы
       </h2>
       <span class="text-center">Успешные проекты, креативные решения, сильные цифры и не только </span>
     </div>
   </div>
-  <div class="d-flex flex-column" style="padding-bottom: 70px">
-    <div class="d-flex flex-row" style="padding-bottom: 30px">
-      <client-keys-card [data]="keysesData[0]"></client-keys-card>
-      <client-keys-card [data]="keysesData[1]"></client-keys-card>
+  <div class="d-flex flex-column" style="padding-bottom:70px">
+    <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column align-items-md-center align-items-sm-center align-items-center">
+      <client-keys-card style="padding-bottom: 30px" class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12" [data]="keysesData[0]"></client-keys-card>
+      <client-keys-card style="padding-bottom: 30px" class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12" [data]="keysesData[1]"></client-keys-card>
     </div>
-    <div class="d-flex flex-row">
-      <client-keys-card [data]="keysesData[2]"></client-keys-card>
-      <client-keyses-form></client-keyses-form>
+    <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column align-items-md-center align-items-sm-center align-items-center">
+      <client-keys-card style="padding-bottom: 30px" class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12" [data]="keysesData[2]"></client-keys-card>
+      <client-keyses-form style="padding-bottom: 30px" class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12"></client-keyses-form>
     </div>
   </div>
 </div>
