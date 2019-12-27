@@ -1,7 +1,8 @@
 <div [ngClass]="{'light-background': data.objectType == 1,'dark-background': data.objectType == 2}"
      style="height: 820px;border-radius: 3px;">
-  <div class="content w-100 h-100" style="padding: 50px 30px 50px 30px;position: relative">
-    <div class="d-flex flex-column align-items-center" style="border-bottom: 1px dashed #3625D3;">
+  <div class="content w-100 h-100" style="padding: 50px 0;position: relative">
+    <div [ngClass]="{'light-background-border': data.objectType == 1,'dark-background-border': data.objectType == 2}" class="d-flex flex-column align-items-center"
+         style="padding: 0 30px">
       <span *ngIf="data.objectType == 2"
             class="font-weight-bold"
             style="padding: 7px 20px;color:
@@ -14,11 +15,11 @@
         {{data.subscription}}
       </p>
     </div>
-    <div style="padding-top: 30px">
+    <div style="padding: 30px 30px 0">
       <h5 class="font-weight-bold m-0" style="padding-bottom: 10px">
         Что входит в стоимость:
       </h5>
-      <ul class="m-0 p-0">
+      <ul class="m-0" style="padding-left: 15px;">
         <li *ngFor="let item of data.firstList">
           <p class="m-0">{{item}}</p>
         </li>
@@ -26,11 +27,14 @@
       <h5 class="font-weight-bold m-0" style="padding-bottom: 10px;padding-top: 30px">
         Для кого подходит:
       </h5>
-      <p class="m-0" [innerHTML]="data.secondList">
+      <p [innerHTML]="data.secondList" class="m-0">
       </p>
     </div>
     <div class="d-flex justify-content-center">
-      <button color="primary" mat-raised-button style="position: absolute;bottom: 50px">Интересно</button>
+      <button
+        [ngClass]="{'light-background-button': data.objectType == 1,'dark-background-button': data.objectType == 2}"
+        mat-raised-button style="position: absolute;bottom: 50px">Интересно
+      </button>
     </div>
   </div>
 </div>

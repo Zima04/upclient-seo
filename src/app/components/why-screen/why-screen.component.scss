@@ -1,0 +1,11 @@
+.block-image{
+  width: 385px;
+  position:absolute;
+  right: -50px;
+}
+
+@media screen and (max-width: 768px){
+  .block-image{
+    display: none;
+  }
+}

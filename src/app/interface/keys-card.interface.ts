@@ -3,6 +3,7 @@ export interface KeysCardInterface {
   header: string;
   subHeader: string;
   cells: Cell[];
+  image?: string;
 }
 
 interface Cell {

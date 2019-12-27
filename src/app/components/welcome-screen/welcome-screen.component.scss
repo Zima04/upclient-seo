@@ -7,4 +7,44 @@
   background-size: 10px 10px;
   height: 200px;
   width: 100%;
+
+  .left-monitor{
+    position:absolute;
+    height: 60%;
+    left: -15px;
+    top: 23%;
+  }
+
+  .right-monitor{
+    position:absolute;
+    height: 60%;
+    top: 52%;
+    right: -15px;
+  }
+
+  .left-ellipse{
+    position: absolute;
+    width: 50%;
+    left: -35%;
+    bottom: -15%;
+  }
+
+  .right-ellipse{
+    position: absolute;
+    width: 50%;
+    right: -20%;
+    top: -45%;
+  }
 }
+
+@media screen and (max-width: 960px){
+  .left-monitor{
+    display: none;
+  }
+
+  .right-monitor{
+    display: none;
+  }
+}
+
+

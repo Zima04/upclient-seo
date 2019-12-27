@@ -4,6 +4,24 @@
 }
 
 .light-background {
-  background: white;
+  background: #ffffff;
   color: #000000;
+}
+
+.dark-background-button {
+  background: #FED441;
+  color: #000000;
+}
+
+.light-background-button {
+  background: #3625d3;
+  color: #ffffff;
+}
+
+.dark-background-border {
+  border-bottom: 1px dashed #FED441;
+}
+
+.light-background-border{
+  border-bottom: 1px dashed #3625D3;
 }

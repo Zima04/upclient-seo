@@ -1,6 +1,7 @@
 import { KeysCardInterface } from '../interface/keys-card.interface';
 
 export const KEYSES_DATA: KeysCardInterface[] = [{
+  image: '/assets/block-2/card-1_bg-img@2x.png',
   objectType: 1,
   header: 'Архитектурное бюро «Zrobym Architects»',
   subHeader: '5 месяцев продвижения, регион Минск',
@@ -19,6 +20,7 @@ export const KEYSES_DATA: KeysCardInterface[] = [{
     },
   ]
 }, {
+  image: '/assets/block-2/card-2_bg-img@2x.png',
   objectType: 2,
   header: 'Школа иностранных языков «SOL»',
   subHeader: '5 месяцев продвижения, регион РБ',
@@ -34,6 +36,7 @@ export const KEYSES_DATA: KeysCardInterface[] = [{
   ]
 },
   {
+    image: '/assets/block-2/card-3_bg-img@2x.png',
     objectType: 2,
     header: 'Пекарня осетинских пирогов «Такие пироги»',
     subHeader: '5 месяцев продвижения, регион Минск',
