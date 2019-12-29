@@ -18,7 +18,7 @@
         </span>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <img src="/assets/block-3/img@2x.png" class="block-image">
+        <img  *ngIf="state" [@zoomInOnEnter] [@zoomOutOnLeave] src="/assets/block-3/img@2x.png" class="block-image">
       </div>
     </div>
   </div>

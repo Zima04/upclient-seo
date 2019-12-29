@@ -1,4 +1,4 @@
-.nav-bar-container{
+.nav-bar-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -14,10 +14,46 @@
   background: #3625D3;
   color: #ffffff;
 
-  .link{
+  .link {
     padding-left: 30px;
-    &:first-child{
+
+    &:first-child {
       padding: 0;
     }
+  }
+}
+
+.burger-block {
+  display: none;
+}
+
+.mobile-menu {
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 20px 0;
+  position: fixed;
+  top: 94px;
+  min-height: 100vh;
+  background: #3625D3;
+  color: #ffffff;
+
+  a:first-child {
+    padding-top: 50px;
+  }
+
+  a {
+    padding-bottom: 70px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .top-navigation {
+    display: none;
+  }
+
+  .burger-block {
+    display: flex;
   }
 }

@@ -23,6 +23,8 @@ import { ClientsScreenComponent } from './components/clients-screen/clients-scre
 import { FooterScreenComponent } from './components/footer-screen/footer-screen.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { MatIconModule, MatListModule, MatSelectModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,14 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     MatFormFieldModule,
     MatButtonModule,
     NgxPageScrollCoreModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    SlickCarouselModule,
+
+    MatSelectModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

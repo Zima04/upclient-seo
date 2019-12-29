@@ -1,4 +1,4 @@
-.packages-screen{
+.packages-screen {
   background: #3625D3;
   color: #ffffff;
   background-image: radial-gradient(#7e7e7ea1 1%, #3625D3 20%);
@@ -6,4 +6,15 @@
   background-size: 10px 10px;
   //height: 200px;
   width: 100%;
+}
+
+.md-column {
+  position: relative;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .md-column {
+    bottom: 0;
+  }
 }

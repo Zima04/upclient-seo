@@ -1,0 +1,13 @@
+.carousel{
+  display: none !important;
+}
+
+@media screen and (max-width: 576px){
+  .carousel{
+    display: block !important;
+  }
+
+  .carousel-desktop{
+    display: none !important;
+  }
+}

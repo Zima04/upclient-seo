@@ -1,25 +1,33 @@
-<div class="container-fluid" style="background: #ffffff">
+<div class="container-fluid" style="background: #ffffff;min-height: 400px;">
   <div class="d-flex flex-column align-items-center" style="padding:70px 30px">
     <div class="d-flex flex-column align-items-center col-6" style="padding-bottom: 50px">
       <h2 class="text-center font-weight-bold">
         Гарантии
       </h2>
     </div>
-    <div class="d-flex flex-lg-row flex-md-row flex-sm-row flex-column align-items-md-center align-items-sm-center align-items-center">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex flex-column align-items-center" style="padding-right: 30px">
-        <img style="width: 50%;padding-bottom: 20px" src="assets/block-5/icon-cash@2x.png">
+    <div
+      class="d-flex flex-lg-row flex-md-row flex-sm-row flex-column align-items-md-center align-items-sm-center align-items-center">
+      <div *ngIf="state" [@zoomInOnEnter] [@zoomOutOnLeave]
+           class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex flex-column align-items-center"
+           style="padding-right: 30px">
+        <img src="assets/block-5/icon-cash@2x.png"
+             style="width: 180px;height:120px; padding-bottom: 20px;">
         <span class="text-center">
           Делаем возврат средств, в случае, невыполнения гарантий
         </span>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex flex-column align-items-center" style="padding-right: 30px">
-          <img style="width: 50%;padding-bottom: 20px" src="assets/block-5/icon-world@2x.png">
+      <div *ngIf="state" [@zoomInOnEnter] [@zoomOutOnLeave]
+           class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex flex-column align-items-center"
+           style="padding-right: 30px">
+        <img src="assets/block-5/icon-world@2x.png"
+             style="width: 180px;height:120px; padding-bottom: 20px;">
         <span class="text-center">
           Успешно продвигаем наших клиентов по всему миру
         </span>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex flex-column align-items-center">
-        <img style="width: 50%" src="assets/block-5/icon-doc@2x.png">
+      <div *ngIf="state" [@zoomInOnEnter] [@zoomOutOnLeave]
+           class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex flex-column align-items-center">
+        <img src="assets/block-5/icon-doc@2x.png" style="width: 180px;padding-bottom: 20px;">
         <span class="text-center">
           Предоставляем официальный пакет документов
         </span>

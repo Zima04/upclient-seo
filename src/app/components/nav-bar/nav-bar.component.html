@@ -1,13 +1,23 @@
+
 <nav class="container-fluid">
   <div class="flex-row nav-bar-container">
     <div class="align-items-center">
       <img src="assets/header/logo_upclient-seo.svg">
     </div>
-    <div class="align-items-center">
-      <a pageScroll class="link" style="color: #ffffff;" [pageScrollOffset]="50" href="#keyses-screen">Наши кейсы</a>
-      <a pageScroll class="link" style="color: #ffffff;" [pageScrollOffset]="50" href="#packages-screen">Пакеты</a>
-      <a pageScroll class="link" style="color: #ffffff;" [pageScrollOffset]="50" href="#questions-screen">Форма</a>
-      <a pageScroll class="link" style="color: #ffffff;" [pageScrollOffset]="50" href="#footer-screen">Контакты</a>
+    <div class="align-items-center top-navigation">
+      <a [pageScrollOffset]="50" class="link" href="#keyses-screen" pageScroll style="color: #ffffff;">Наши кейсы</a>
+      <a [pageScrollOffset]="50" class="link" href="#packages-screen" pageScroll style="color: #ffffff;">Пакеты</a>
+      <a [pageScrollOffset]="50" class="link" href="#questions-screen" pageScroll style="color: #ffffff;">Форма</a>
+      <a [pageScrollOffset]="50" class="link" href="#footer-screen" pageScroll style="color: #ffffff;">Контакты</a>
+    </div>
+    <div class="burger-block">
+      <mat-icon (click)="toggleBurger()">menu</mat-icon>
     </div>
   </div>
 </nav>
+<div *ngIf="mobileMenuToggle" class="d-flex flex-column align-items-center mobile-menu w-100">
+  <a [pageScrollOffset]="50" (pageScrollFinish)="toggleBurger()" class="link font-weight-bold" href="#keyses-screen" pageScroll style="color: #ffffff;"><h4>Наши кейсы</h4></a>
+  <a [pageScrollOffset]="50" (pageScrollFinish)="toggleBurger()" class="link font-weight-bold" href="#packages-screen" pageScroll style="color: #ffffff;"><h4>Пакеты</h4></a>
+  <a [pageScrollOffset]="50" (pageScrollFinish)="toggleBurger()" class="link font-weight-bold" href="#questions-screen" pageScroll style="color: #ffffff;"><h4>Форма</h4></a>
+  <a [pageScrollOffset]="50" (pageScrollFinish)="toggleBurger()" class="link font-weight-bold" href="#footer-screen" pageScroll style="color: #ffffff;"><h4>Контакты</h4></a>
+</div>
