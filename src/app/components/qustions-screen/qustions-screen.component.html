@@ -1,6 +1,6 @@
-<div id="questions-screen" class="container-fluid questions-screen" style="position:relative;">
-  <img src="/assets/block-6/shape-left@2x.png" class="left-shape">
-  <img src="/assets/block-6/shape-right@2x.png" class="right-shape">
+<div class="container-fluid questions-screen" id="questions-screen" style="position:relative;">
+  <img class="left-shape" src="/assets/block-6/shape-left@2x.png">
+  <img class="right-shape" src="/assets/block-6/shape-right@2x.png">
   <div class="d-flex flex-column align-items-center">
     <div class="d-flex flex-column align-items-center col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12"
          style="padding-top: 70px;color: #ffffff">
@@ -15,8 +15,10 @@
     border: 1px dashed #3625D3;
     box-sizing: border-box;
     border-radius: 3px;
-    padding: 70px 30px 50px">
-          <form class="d-flex flex-column" ngNoForm [action]="'https://formspree.io/info@upclient.by'" method="POST" >
+    padding: 70px 30px 50px;
+color:#000000"
+        >
+          <form [action]="'https://formspree.io/info@upclient.by'" class="d-flex flex-column" method="POST" ngNoForm>
             <mat-form-field class="example-full-width">
               <input matInput name="name_user" placeholder="Ваше имя:">
             </mat-form-field>
@@ -24,7 +26,7 @@
               <input matInput name="phone_number" placeholder="Номер телефона:">
             </mat-form-field>
             <div class="d-flex justify-content-center" style="padding-top: 30px">
-              <button type="submit" color="primary" mat-raised-button>Отправить</button>
+              <button color="primary" mat-raised-button type="submit">Отправить</button>
             </div>
           </form>
         </div>
