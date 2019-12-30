@@ -1,24 +1,28 @@
 <div style="height: 300px;">
+
   <div class="content w-100 h-100 " style="
      background: #FFFFFF;
     border: 1px dashed #3625D3;
     box-sizing: border-box;
     border-radius: 3px;
     padding: 20px 30px 30px 30px">
-    <h4 class="m-0 text-center font-weight-bold" style="padding-bottom: 5px; color:black">
-      Бесплатный аудит
-    </h4>
-    <span class="d-block w-100 text-center" style="color:black">Вашего сайта с прогнозом продвижения</span>
-    <form class="d-flex flex-column" style="padding-top: 20px">
-      <mat-form-field class="example-full-width">
-        <input matInput placeholder="Ссылка на ваш сайт:">
-      </mat-form-field>
-      <mat-form-field class="example-full-width">
-        <input matInput placeholder="Номер телефона:">
-      </mat-form-field>
+    <form ngNoForm [action]="'https://formspree.io/info@upclient.by'" method="POST" >
+      <h4 class="m-0 text-center font-weight-bold" style="padding-bottom: 5px; color:black">
+        Бесплатный аудит
+      </h4>
+      <span class="d-block w-100 text-center" style="color:black">Вашего сайта с прогнозом продвижения</span>
+      <form class="d-flex flex-column" style="padding-top: 20px">
+        <mat-form-field class="example-full-width">
+          <input matInput name="link_site" placeholder="Ссылка на ваш сайт:" type="text">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput name="phone_number" placeholder="Номер телефона:" type="text">
+        </mat-form-field>
+      </form>
+      <div class="d-flex justify-content-center">
+        <button type="submit" color="primary" mat-raised-button>Отправить</button>
+      </div>
     </form>
-    <div class="d-flex justify-content-center">
-      <button mat-raised-button color="primary">Отправить</button>
-    </div>
   </div>
+
 </div>

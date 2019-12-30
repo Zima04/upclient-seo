@@ -3,9 +3,20 @@
   color: #ffffff;
 }
 
-.first-card{
+.first-card {
   position: absolute;
   width: 50%;
   right: -20%;
   top: -20%;
+}
+
+.basic-card {
+  height: 300px;
+}
+
+@media screen and (max-width: 576px) {
+  .basic-card {
+    min-height: 300px;
+    height: auto;
+  }
 }

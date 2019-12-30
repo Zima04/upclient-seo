@@ -25,6 +25,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { MatIconModule, MatListModule, MatSelectModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FooterScreenComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

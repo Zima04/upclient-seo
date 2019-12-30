@@ -16,15 +16,15 @@
     box-sizing: border-box;
     border-radius: 3px;
     padding: 70px 30px 50px">
-          <form class="d-flex flex-column">
+          <form class="d-flex flex-column" ngNoForm [action]="'https://formspree.io/info@upclient.by'" method="POST" >
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Ваше имя:">
+              <input matInput name="name_user" placeholder="Ваше имя:">
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Номер телефона:">
+              <input matInput name="phone_number" placeholder="Номер телефона:">
             </mat-form-field>
             <div class="d-flex justify-content-center" style="padding-top: 30px">
-              <button color="primary" mat-raised-button>Отправить</button>
+              <button type="submit" color="primary" mat-raised-button>Отправить</button>
             </div>
           </form>
         </div>
