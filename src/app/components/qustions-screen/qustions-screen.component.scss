@@ -20,3 +20,11 @@
   width: 420px;
   right: -250px;
 }
+
+@media screen and (max-width: 576px){
+  .right-shape{
+    width: 100%;
+    right: 0;
+  }
+}
+
