@@ -17,7 +17,14 @@ export class ClientsScreenComponent implements OnInit {
     {img: 'assets/block-7/logo-zvezda@2x.png'},
     {img: 'assets/block-7/logo-skoda@2x.png'},
   ];
-  slideConfig = {'slidesToShow': 1, 'slidesToScroll': 1};
+  slideConfig = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    speed: 1400,
+    infinite: true
+  };
 
   constructor() {
   }

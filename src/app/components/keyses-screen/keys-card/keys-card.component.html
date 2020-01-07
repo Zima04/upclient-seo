@@ -5,9 +5,9 @@
       {{data.header}}
     </h4>
     <span>{{data.subHeader}}</span>
-    <div *ngIf="true" class="d-flex align-items-center mr-auto" style="padding-top: 80px">
+    <div *ngIf="true" class="d-flex align-items-center mr-auto flex-column pad-80" style="padding-top: 80px">
       <div *ngFor="let cell of data.cells" [ngClass]="{'col-4': data.objectType == 1,'col-6': data.objectType == 2}"
-           class="p-0">
+           class="p-0 col-xs-12 card-info">
         <h4 class="align-items-start m-0 font-weight-bold"> {{cell.fieldValue}}</h4>
         <span class="align-items-center" style="font-size: 14px">
           {{cell.subscription}}

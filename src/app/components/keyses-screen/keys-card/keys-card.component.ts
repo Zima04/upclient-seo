@@ -14,6 +14,4 @@ export class KeysCardComponent implements OnInit {
   ngOnInit() {
   }
 
-
-
 }

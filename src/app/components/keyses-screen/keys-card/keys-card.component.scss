@@ -14,7 +14,16 @@
   height: 300px;
 }
 
+.pad-80 {
+  padding-top: 80px;
+}
+
 @media screen and (max-width: 576px) {
+  .card-info {
+    max-width: 100% !important;
+    padding-bottom: 20px !important;
+  }
+
   .basic-card {
     min-height: 300px;
     height: auto;
@@ -24,5 +33,9 @@
     position: absolute;
     width: 70%;
     right: 0;
+  }
+
+  .pad-80 {
+    padding-top: 30px !important;
   }
 }

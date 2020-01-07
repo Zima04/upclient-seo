@@ -30,7 +30,7 @@ export const KEYSES_DATA: KeysCardInterface[] = [{
       subscription: 'новые пользователи'
     },
     {
-      fieldValue: '334,10',
+      fieldValue: '334,10%',
       subscription: 'увеличение трафика'
     },
   ]
