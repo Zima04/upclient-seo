@@ -11,5 +11,4 @@ export class FooterScreenComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

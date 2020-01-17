@@ -10,12 +10,18 @@
 
 .dark-background-button {
   background: #FED441;
-  color: #000000;
+
+  a{
+    color: #000000;
+  }
 }
 
 .light-background-button {
   background: #3625d3;
-  color: #ffffff;
+
+  a{
+    color: #ffffff;
+  }
 }
 
 .dark-background-border {
