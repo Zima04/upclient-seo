@@ -23,9 +23,10 @@ import { ClientsScreenComponent } from './components/clients-screen/clients-scre
 import { FooterScreenComponent } from './components/footer-screen/footer-screen.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
-import { MatIconModule, MatListModule, MatSelectModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MatDialogModule, MatIconModule, MatListModule, MatSelectModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HttpClientModule } from '@angular/common/http';
+import { PopupScreenComponent } from './components/popup-screen/popup-screen.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     QustionsScreenComponent,
     ClientsScreenComponent,
     FooterScreenComponent,
+    PopupScreenComponent
   ],
   imports: [
     HttpClientModule,
@@ -53,6 +55,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatDialogModule,
     NgxPageScrollCoreModule,
     NgxPageScrollModule,
     SlickCarouselModule,
@@ -63,7 +66,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatListModule
   ],
-  providers: [],
+  entryComponents: [PopupScreenComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {

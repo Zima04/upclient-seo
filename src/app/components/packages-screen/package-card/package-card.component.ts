@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PackagesCardInterface } from '../../../interface/packages-card.interface';
+import { MatDialog } from '@angular/material';
+import { PopupScreenComponent } from '../../popup-screen/popup-screen.component';
 
 @Component({
   selector: 'client-package-card',

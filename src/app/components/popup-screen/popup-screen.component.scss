@@ -1,0 +1,28 @@
+
+::ng-deep.mat-dialog-container {
+  padding: 0 !important;
+  border-radius: 16px;
+
+  .popup-image {
+    background: url("/assets/popup.png");
+  }
+
+  .form-content {
+    padding: 70px 80px 70px 30px
+  }
+}
+
+::ng-deep.cdk-global-scrollblock {
+  position: static;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}
+
+@media screen and (max-width: 960px) {
+  .popup-image {
+    display: none;
+  }
+  .form-content {
+    padding: 70px 30px;
+  }
+}
