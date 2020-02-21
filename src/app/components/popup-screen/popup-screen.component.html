@@ -3,22 +3,20 @@
   <div class="col-lg-5 col-xl-5 popup-image">
   </div>
   <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 content w-100 h-100 form-content">
-    <form ngNoForm [action]="'https://formspree.io/info@upclient.by'" method="POST" >
       <h4 class="m-0 font-weight-bold" style="padding-bottom: 5px; color:black">
         Месяц бесплатного SEO!
       </h4>
       <span class="d-block w-100" style="color:black">Закажите оптимизацию своего сайта и получите +1 месяц seo в подарок!</span>
-      <form class="d-flex flex-column" style="padding-top: 20px">
+      <form  ngNoForm [action]="'https://formspree.io/info@upclient.by'" method="POST"  class="d-flex flex-column" style="padding-top: 20px">
         <mat-form-field class="example-full-width">
           <input matInput name="link_site" placeholder="Ссылка на ваш сайт:" type="text">
         </mat-form-field>
         <mat-form-field class="example-full-width">
           <input matInput name="phone_number" placeholder="Номер телефона:" type="text">
         </mat-form-field>
+        <div class="d-flex" style="padding-top: 10px">
+          <button type="submit" color="primary" mat-raised-button>Отправить</button>
+        </div>
       </form>
-      <div class="d-flex" style="padding-top: 10px">
-        <button type="submit" color="primary" mat-raised-button>Отправить</button>
-      </div>
-    </form>
   </div>
 </div>
